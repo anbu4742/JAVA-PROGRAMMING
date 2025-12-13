@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a;
+        a = sc.nextInt();
+        if(a>0 && a<=5){
+            System.out.println("Ticket price is 100");
+        }
+        else if(a==6 || a==7){
+            System.out.println("Ticket price is 150");
+        }
+    }
+}

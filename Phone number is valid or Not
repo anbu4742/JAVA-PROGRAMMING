@@ -1,0 +1,15 @@
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        long a;
+        a = sc.nextLong();
+        if(a>1000000000l && a<9999999999l){
+            System.out.println("Valid Number");
+        }
+        else{
+            System.out.println("Invalid Number");
+        }
+    }
+}

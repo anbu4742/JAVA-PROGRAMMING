@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a;
+        a = sc.nextInt();
+        if(a>=60){
+            System.out.println("Eligible for Senior Citizen benifits");
+        }
+        else{
+            System.out.println("Not Eligible for Senior Citizen benifits");
+        }
+    }
+}

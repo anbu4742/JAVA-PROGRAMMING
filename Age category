@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a;
+        a = sc.nextInt();
+        if(a<15){
+            System.out.println("Child");
+        }
+        else if(a>15 && a<26){
+            System.out.println("Adult");
+        }
+        else if(a>=26){
+            System.out.println("Senior");
+        }
+    }
+}

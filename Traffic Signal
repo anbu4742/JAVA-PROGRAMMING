@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        char l = sc.next().charAt(0);
+        if(l=='r' || l=='R'){
+            System.out.println("Stop");
+
+        }
+        else if(l=='y' || l=='Y'){
+            System.out.println("Ready");
+
+        }
+        else if(l=='g' || l=='G'){
+            System.out.println("Go");
+
+        }
+    }
+}

@@ -1,0 +1,37 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int bal = 1000;
+        int a;
+        a = sc.nextInt();
+        switch(a){
+            case 1:
+                System.out.println("Main Balance:" + bal);
+                break;
+            case 2:
+                int dep = sc.nextInt();
+                int depbal = dep+bal;
+                System.out.println("Deposit Amount:" + dep);
+                System.out.println("Main Balance:" + depbal);
+                break;
+            case 3:
+                int wid = sc.nextInt();
+                int widbal = bal-wid;
+                if (wid<=bal){
+                System.out.println("Withdraw Amount:" + wid);
+                System.out.println("Main Balance:" + widbal);
+                }
+                else if(wid>bal){
+                System.out.println("Insufficient Balance");
+                }
+                break;
+            case 4:
+                System.out.println("Exit");
+                break;
+            default:
+                System.out.println("No operation");
+            
+        }
+        } 
+}

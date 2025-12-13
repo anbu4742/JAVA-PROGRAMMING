@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a;
+        a = sc.nextInt();
+        int pin = 8056;
+        if(a==pin){
+            System.out.println("You can Withdraw your amount");
+        }
+        else{
+            System.out.println("You have emtered wrong pin");
+        }
+    }
+}

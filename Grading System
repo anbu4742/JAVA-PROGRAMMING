@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a;
+        a = sc.nextInt();   
+        if(a>=80)System.err.println("A Grade");
+        else if(a>=60 && a<=79)System.err.println("B Grade");
+        else if(a>=35 && a<=59)System.err.println("C Grade");
+        else System.err.println("Fail");
+        } 
+}

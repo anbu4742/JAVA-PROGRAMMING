@@ -1,0 +1,21 @@
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a;
+        a = sc.nextInt();
+        if(a<=15){
+            System.out.println("Cold");
+        }
+        else if(a<=25 && a>15){
+            System.out.println("Pleasant");
+        }
+        else if(a<=30 && a>25){
+            System.out.println("Hot");
+        }
+        else if(a>30){
+            System.out.println("Heatwave");
+        }
+    }
+}

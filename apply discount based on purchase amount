@@ -1,0 +1,33 @@
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a;
+        a = sc.nextInt();
+        if(a>=10000){
+            int dis = (a/100)*20;
+            int fa = a-dis;
+            System.out.println("Discounted Price:" + fa);
+        }
+        if(a>=7000 && a<10000){
+            int dis = (a/100)*15;
+            int fa = a-dis;
+            System.out.println("Discounted Price:" + fa);
+        }
+        if(a>=5000 && a<7000){
+            int dis = (a/100)*10;
+            int fa = a-dis;
+            System.out.println("Discounted Price:" + fa);
+        }
+        if(a>=2000 && a<5000){
+            int dis = (a/100)*5;
+            int fa = a-dis;
+            System.out.println("Discounted Price:" + fa);
+        }
+        else if(a<2000) {
+            System.out.println("No Discount");
+            System.out.println("Finale Amount:" + a);
+        }
+    }
+}

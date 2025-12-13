@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a;
+        double bill = 0;
+        a = sc.nextInt();
+        if(a<=100){
+            bill = 0;
+        }
+        else if(a<=300){
+            bill = (a-100)*5;
+        }
+        else {
+            bill = (200*5)+((a-300)*10);
+        }
+        if(a>500){
+            bill = bill+(bill*0.10);
+        }
+            
+        System.out.println("Total Electricity Bill:" + bill);
+    }
+}

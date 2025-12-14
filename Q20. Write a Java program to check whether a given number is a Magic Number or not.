@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int a = n;
+        while(a>9){
+            int t = a;
+            a = 0;
+            while(t!=0){
+                a = a+(t%10);
+                t = t/10;
+            }
+        }
+        if(a==1){
+            System.out.println("Magic Number");
+        }
+        else{
+            System.out.println("Not a Magic Number");
+        }
+     }
+}

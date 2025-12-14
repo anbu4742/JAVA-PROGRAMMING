@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int b = n;
+        int d = 1;
+        int count =0;
+        while(b!=0){
+            count++;
+            b = b/10;
+        }
+        for(int i = 1;i<=count;i++){
+            d = d*10;
+        }
+        int sq = n*n;
+        int e = sq%d;
+        if(e==n){
+            System.out.println("Automorphic Number");
+        }
+        else{
+            System.out.println("Not a Automorphic Number");
+        }
+     }
+}

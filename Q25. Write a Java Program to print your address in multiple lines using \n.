@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String str,dno,stname,pname,cname,pin;
+        str = sc.nextLine();
+        dno = sc.nextLine();
+        stname = sc.nextLine();
+        pname = sc.nextLine();
+        cname = sc.nextLine();
+        pin = sc.nextLine();
+        System.out.println(str +"\n" + dno + "\n" + stname + "\n" + pname + "\n" + cname + "\n" + pin);
+    }
+}

@@ -1,0 +1,33 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int a = n;
+        int b = n;
+        int digit = 0;
+        int arm = 0;
+        int count = 0;
+        while(a!=0){
+            count++;
+            a=a/10;
+        }
+        while(n!=0){
+            digit = n%10;
+            int power = 1;
+            for(int i=1;i<=count;i++){
+                power = power*digit;
+            }
+            arm = arm+power;
+            n = n/10;
+        }
+        if(b == arm){
+            System.out.println("It is Armstrong Number");
+        }
+        else{
+            System.out.println("It is not a Armstrong Number");
+        }
+        
+        
+     }
+}

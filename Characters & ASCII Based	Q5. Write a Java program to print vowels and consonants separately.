@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Vowels:");
+        for(int i =65;i<=90;i++){
+            if(i==65 || i==69 || i==73 || i==79 || i==85){
+                System.out.print((char)i + " ");
+            }
+        }
+        System.out.println();
+        System.out.print("Consonants:");
+        for(int i =65;i<=90;i++){
+            if(!(i==65 || i==69 || i==73 || i==79 || i==85)){
+                System.out.print((char)i + " ");
+            }
+        }
+        
+    }
+}

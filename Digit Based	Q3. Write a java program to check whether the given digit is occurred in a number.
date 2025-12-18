@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int a = sc.nextInt();
+        boolean occur = false;
+        while(n!=0){
+            int digit =  n%10;
+            if(a==digit){
+                occur = true;
+                break;
+            }
+            n = n/10;
+        }
+        if(occur){
+            System.out.println("Number is occured");
+        }
+        else{
+            System.out.println("Number is not occured");
+        }
+
+        
+    }
+}

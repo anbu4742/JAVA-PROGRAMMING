@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+        boolean descending = true;
+        int prevDigit = -1; 
+        while (n > 0) {
+            int digit = n % 10;
+            if (prevDigit != -1 && digit < prevDigit) {
+                descending = false;
+                break;
+            }
+            prevDigit = digit;
+            n = n / 10;
+        }
+        if (descending) {
+            System.out.println("Digits are in descending order.");
+        } else {
+            System.out.println("Digits are NOT in descending order.");
+        }
+    }
+}

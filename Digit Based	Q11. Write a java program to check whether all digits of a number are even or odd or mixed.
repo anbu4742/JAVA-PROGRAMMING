@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        boolean allEven = true;
+        boolean allOdd = true;
+        int temp = n;
+        while (temp > 0) {
+            int digit = temp % 10;
+            if (digit % 2 == 0) {
+                allOdd = false;    
+            } else {
+                allEven = false;  
+            }
+            temp /= 10;
+        }
+        if (allEven) {
+            System.out.println("All digits are EVEN");
+        } else if (allOdd) {
+            System.out.println("All digits are ODD");
+        } else {
+            System.out.println("Digits are MIXED (both even and odd)");
+        }
+    }
+}

@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+        boolean ascending = true;
+        int prevDigit = 10; 
+        while (n > 0) {
+            int digit = n % 10;   
+            if (digit > prevDigit) {
+                ascending = false;
+                break;
+            }
+            prevDigit = digit;
+            n = n / 10;
+        }
+        if (ascending) {
+            System.out.println("Digits are in ascending order.");
+        } else {
+            System.out.println("Digits are NOT in ascending order.");
+        }
+    }
+}
